@@ -1,0 +1,54 @@
+ /**
+   * A Sample CSS Framework
+   * Author: Azizur Rahman and Kamaruzzaman Maruf
+   * Mockups collected from Udacity.
+   *
+   **/
+.title{
+	background: rgb(51, 190, 190);
+	padding-top: 20px;
+	padding-bottom: 15px;
+	font-weight: bold;
+    text-align: center;
+}
+
+
+
+
+/* Large */
+.app {
+  	display: flex;
+	display: -webkit-flex;
+	margin-top: 5px;
+	flex-flow: row wrap;
+	align-items: center;
+
+  /* This aligns items to at the center  it by evenly distributing empty space around items */
+  justify-content: space-around;
+}
+
+/* Medium screens */
+@media all and (max-width: 800px) {
+  .app {
+    /* When on medium sized screens, we center it */
+    justify-content: center;
+  }
+}
+
+/* Small screens */
+@media all and (max-width: 500px) {
+  .app {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+}
+.description{
+display: flex;
+	max-width:66%;
+}
+.image {
+ display: flex;
+      max-width: 33%;
+	  max-height:300px;
+  
+}
